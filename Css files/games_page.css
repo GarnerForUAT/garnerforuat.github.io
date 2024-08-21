@@ -1,0 +1,177 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+.container{
+    width:150%;
+    height:119px;
+    background-image:linear-gradient(rgb(29, 18, 41),rgb(11, 20, 46) 250%);
+}
+
+
+
+
+
+
+nav /*navigation bar customizations */
+{
+    width:150%;
+    height:97px;
+    background-image:linear-gradient(rgb(22, 15, 34),rgb(31, 27, 41) 250%);
+
+}
+
+
+
+img /*Code for the slideshow images on website*/
+{   
+    display:grid;
+    margin-left: 47%;
+    margin-right: auto;
+    margin-bottom: 10%;
+    border-style:double;
+    border-color: rgb(255, 217, 0);
+    width:30%;
+    height:397px;
+    border-width:3px;
+   flex: 3;
+   grid-template-columns: repeat(2, 1fr);
+}
+
+img:hover /* Special glow effect that occurs when hovering over image link*/
+{
+    background-color:rgb(18, 18, 32);
+    color:gold;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 5px 50px 0 rgb(0, 0, 0) inset, 0 15px 50px 0 rgb(101, 211, 255),
+                0 5px 50px 0 white inset, 0 5px 50px 0 aqua;
+                text-shadow: 0 0 5px rgb(255, 187, 0),
+                0 0 5px orangered ;
+    border-color:red;  
+
+}
+
+ul li  /*addition navigation styling code */
+{
+    list-style: none;
+    display:inline-block;
+
+    line-height: 90px;
+}
+
+ul  li a /* navigation font customizations */
+{
+    text-decoration: none;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:aliceblue;
+    padding: 0 119px;
+}
+
+ul  li a:hover /* Special effects that occur when cursor is held over any of the navigation buttons */
+{
+    background-color:rgb(18, 18, 32);
+    color:rgb(253, 218, 61);
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 5px 50px 0 black inset, 0 5px 50px 0 aqua,
+                0 5px 50px 0 white inset, 0 5px 50px 0 aqua;
+                text-shadow: 0 0 5px orangered,
+                0 0 5px orangered ;
+    border-color:red;
+}
+
+
+body  /* code for the size of the entire page itself */
+{
+    display:block;
+    justify-content: center;
+    align-items: center;
+height:2800px;
+background-image:linear-gradient(rgb(27, 8, 53),rgb(148, 42, 0) 250%);
+background-repeat:no-repeat;
+}
+
+
+
+
+h1 /* header 1's text graphics */
+{
+    margin-left: 15%;
+    margin-right: auto;
+    padding-left: 28%;
+    font-size:545%;
+    color:rgba(255, 231, 14, 0.897);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display:grid;
+    text-align: center;
+    font-weight:bolder;
+    border-style:double;
+    border-color: rgb(31, 211, 243);
+    font-style:normal;
+       padding: 0%;
+
+       width: 100%;
+   
+}
+
+h2 /* header 2's text graphics */
+{
+    font-size:230%;
+  color:rgb(255, 199, 16);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display:grid;
+  text-align: center;
+  font-weight:normal;
+  padding:0%;
+  margin-left: 24%;
+}
+
+main h2:hover {
+    background-color:rgb(18, 18, 32);
+    color:gold;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 5px 50px 0  black inset, 0 5px 50px 0 aqua,
+                0 5px 50px 0 white inset, 0 5px 50px 0 aqua;
+}
+
+h3 /* header 3's text graphics */
+{
+    display:grid;
+    text-align: center;
+    font-weight:normal;
+    text-decoration: none;
+    font-size: 38px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:aliceblue;
+    padding: 5 119px;
+}
+
+
+h4 /* header 4's text graphics */
+{
+    color:white;
+    font-weight:normal;
+    font-size:large;
+}
+
+p{ /* all paragraph text graphics */
+    padding:0%;
+    margin-left: 27%;
+    font-size:158%;
+    color:rgba(255, 255, 255, 0.897);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display:grid;
+    text-align: center;
+    font-weight:bold;
+    background-image:linear-gradient(rgb(26, 6, 54),rgba(148, 42, 0, 0.493) 250%);
+    background-repeat:no-repeat;
+    left:40%;
+    
+}
