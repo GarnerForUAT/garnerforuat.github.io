@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RoboMatch - Build Your Custom Robot</title>
+
+  <!-- Embedded Styles -->
+  <style>
+    /* Base Styling */
+    body {
+      font-family: sans-serif;
+      background-color: #0f172a;
+      color: #f1f5f9;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 0.25rem;
+    }
+
+    h2, h3 {
+      text-align: center;
+      color: #38bdf8;
+    }
+
+    p {
+      text-align: center;
+      color: #94a3b8;
+      max-width: 600px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 2rem auto;
+      background: #1e293b;
+      padding: 2rem;
+      border-radius: 1rem;
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    input, select, button {
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      background-color: #3b82f6;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #2563eb;
+    }
+
+    pre {
+      background-color: #000;
+      color: #00ff88;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Title & Purpose -->
+  <h1>🤖 RoboMatch</h1>
+  <h2>Your AI Robot Creation Companion</h2>
+  <p>
+    RoboMatch lets you build, customize, and export robot characters for use in stories, games, roleplaying campaigns, or design portfolios. 
+    Choose the type, personality, combat stats, and energy source—then export a full profile sheet!
+  </p>
+
+  <!-- How-To Instructions -->
+  <h3>🛠️ How to Use</h3>
+  <p>
+    Fill out the form below to define your robot’s characteristics. Once ready, click **Export Bot Sheet** to generate a JSON profile you can save or use anywhere.
+  </p>
+
+  <!-- App Interface -->
+  <div class="container">
+    <label for="botName">🤖 Bot Name</label>
+    <input type="text" id="botName" placeholder="e.g., Rinzeler" />
+
+    <label for="botType">⚙️ Bot Type</label>
+    <select id="botType">
+      <option>Combat Drone</option>
+      <option>Companion</option>
+      <option>Recon Mech</option>
+      <option>Android</option>
+      <option>Medical Bot</option>
+      <option>Experimental Entity</option>
+    </select>
+
+    <label for="personality">💡 AI Personality</label>
+    <select id="personality">
+      <option>Loyal</option>
+      <option>Curious</option>
+      <option>Aggressive</option>
+      <option>Compassionate</option>
+      <option>Calculating</option>
+      <option>Unpredictable</option>
+    </select>
+
+    <label for="combatPower">🔥 Combat Power</label>
+    <input type="range" id="combatPower" min="0" max="100" step="5" value="30" />
+    <span id="combatDisplay">30</span>
+
+    <label for="energySource">⚡ Energy Source</label>
+    <select id="energySource">
+      <option>Alien Energy Core</option>
+      <option>Solar Reactor</option>
+      <option>Fusion Cell</option>
+      <option>Chaos Crystal</option>
+      <option>Unknown Origin</option>
+    </select>
+
+    <button onclick="exportBot()">Export Bot Sheet</button>
+
+    <!-- Output Area -->
+    <div id="output" style="margin-top: 2rem;"></div>
+  </div>
+
+  <!-- JavaScript Logic -->
+  <script>
+    // Handle updating the displayed combat power when the slider moves
+    const combatSlider = document.getElementById('combatPower');
+    const combatDisplay = document.getElementById('combatDisplay');
+
+    combatSlider.addEventListener('input', () => {
+      combatDisplay.textContent = combatSlider.value;
+    });
+
+    // Export function to create a JSON-like profile for the robot
+    function exportBot() {
+      const bot = {
+        name: document.getElementById('botName').value || "Unnamed Bot",
+        type: document.getElementById('botType').value,
+        personality: document.getElementById('personality').value,
+        combatPower: combatSlider.value,
+        energySource: document.getElementById('energySource').value
+      };
+
+      // Display bot object in a readable format
+      document.getElementById('output').innerHTML = `
+        <h3>📄 Exported Bot Sheet:</h3>
+        <pre>${JSON.stringify(bot, null, 2)}</pre>
+      `;
+    }
+  </script>
+
+</body>
+</html>
