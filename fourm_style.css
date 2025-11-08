@@ -1,0 +1,283 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+.container{
+    width:266%;
+    height:119px;
+    background-image:linear-gradient(rgb(29, 18, 41),rgb(11, 20, 46) 250%);
+   
+}
+
+.error{ /* Code for all error messages that may appear on the form */
+    color:red;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+label{ /* Code for all the labels' appearances. */
+    color:white;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left:20%;
+}
+
+input{ /* Code for the all the inputs's appearances. */
+
+    display:block;
+    margin-left:40%;
+color: rgb(0, 217, 255);
+width:480px;
+height:120px;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 25px;
+font-style: italic;
+border-radius: 10%;
+background:black;
+letter-spacing: 3px;
+font-weight:300;
+border-color: rgb(236, 200, 0);
+border-style:groove;
+overflow: hidden;
+transition:.5s;
+}
+
+input:before {  /* Code for the button's appearance before cursor is hovered over them. */
+
+content: '';
+display: block;
+position:absolute;
+background: rgba(236, 236, 0, 0.774);
+width: 300px;
+height:100px;
+left:0;
+top:0;
+opacity:.4s;
+filter:blur(40px)
+transform:translateX(300px) skewX(-15deg);
+}
+
+input:after  /*Code for what happens after cursor is hovered over any buttons */
+{
+content: ''; 
+display: block;
+position:absolute;
+width: 290px;
+height:100px;
+left:0;
+top:0;
+opacity: 4s;
+filter; blur(40px);
+transform:translateX(-100px) scaleX(-15deg);
+}
+
+
+
+input:hover  /*Code for effects that occur while the cursor is hovered over any buttons */
+{
+    background-color:rgb(18, 18, 32);
+    color:gold;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 5px 50px 0 black inset, 0 5px 50px 0 rgb(23, 29, 29),
+                0 5px 50px 0 aqua inset, 0 5px 50px 0 aqua;
+                text-shadow: 0 0 5px orangered,
+                0 0 5px orangered ;
+    border-color:red;
+
+}
+
+input:hover:before  /* Code for what happens before the cursor is over any buttons */
+{
+transform:translateX(100px) skewX(-15deg);
+opacity: .4s;
+transition: .3s;
+}
+
+input:hover:after { /*Code for the effects that occur after cursor is hovered over a button */
+transform: translateX(100px) skewX(-15deg);
+opacity: .2s;
+transition: .3s;
+}
+
+
+button{ /* Code for the all the buttons's appearances. */
+
+    display:block;
+
+color: rgb(0, 217, 255);
+
+margin-left: 90%;
+width:300px;
+height:120px;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 30px;
+font-style:normal;
+border-radius: 10%;
+background:black;
+letter-spacing: 3px;
+font-weight:300;
+border-color: rgb(236, 200, 0);
+border-style:groove;
+overflow: hidden;
+transition:.5s;
+}
+
+
+
+
+button:hover  /*Code for effects that occur while the cursor is hovered over any buttons */
+{
+    background-color:rgb(18, 18, 32);
+    color:gold;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 5px 50px 0 black inset, 0 5px 50px 0 rgb(23, 29, 29),
+                0 5px 50px 0 aqua inset, 0 5px 50px 0 aqua;
+                text-shadow: 0 0 5px orangered,
+                0 0 5px orangered ;
+    border-color:red;
+
+}
+
+button:hover:before  /* Code for what happens before the cursor is over any buttons */
+{
+transform:translateX(100px) skewX(-15deg);
+opacity: .4s;
+transition: .3s;
+}
+
+input:hover:after { /*Code for the effects that occur after cursor is hovered over a button */
+transform: translateX(100px) skewX(-15deg);
+opacity: .2s;
+transition: .3s;
+}
+
+
+
+
+
+nav /*navigation bar customizations */
+{
+    width:159%;
+    height:97px;
+    background-image:linear-gradient(rgb(22, 15, 34),rgb(31, 27, 41) 250%);
+ 
+
+}
+
+
+
+
+
+
+
+
+ul li  /*addition navigation styling code */
+{
+    list-style: none;
+    display:inline-block;
+    line-height: 90px;
+}
+
+ul  li a /* navigation font customizations */
+{
+    text-decoration: none;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:aliceblue;
+    padding: 0 119px;
+}
+
+ul  li a:hover /* Special effects that occur when cursor is held over any of the navigation buttons */
+{
+    background-color:rgb(18, 18, 32);
+    color:rgb(253, 218, 61);
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 5px 50px 0 black inset, 0 5px 50px 0 aqua,
+                0 5px 50px 0 white inset, 0 5px 50px 0 aqua;
+                text-shadow: 0 0 5px orangered,
+                0 0 5px orangered ;
+    border-color:red;
+}
+
+
+body  /* code for the size of the entire page itself */
+{
+display:block;
+justify-content: center;
+align-items: center;
+height:300px;
+background-image:linear-gradient(rgb(27, 8, 53),rgb(148, 42, 0) 250%);
+background-repeat:no-repeat;
+}
+
+
+
+
+h1 /* header 1's text graphics */
+{
+    margin-left: 65%;
+    padding-left: 28%;
+    font-size:750%;
+    color:rgb(248, 227, 33);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display:grid;
+    text-align: center;
+    font-weight:bolder;
+    font-style:italic;
+    padding: 0%;
+
+    width: 100%;
+}
+
+h2 /* header 2's text graphics */
+{
+    font-size:130%;
+  color:white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display:grid;
+  text-align: center;
+  font-weight:normal;
+  
+}
+
+h3 /* header 3's text graphics */
+{
+    display:grid;
+    text-align: center;
+    font-weight:normal;
+    text-decoration: none;
+    font-size: 38px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:aliceblue;
+    padding: 5 119px;
+}
+
+
+h4 /* header 4's text graphics */
+{
+    color:white;
+    font-weight:normal;
+    font-size:large;
+}
+
+p{ /* all paragraph text graphics */
+    font-size:169%;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display:grid;
+    text-align: center;
+    font-weight:bold;
+    background-image:linear-gradient(rgb(6, 4, 10),rgba(148, 42, 0, 0.493) 250%);
+    background-repeat:no-repeat;
+left:70%;
+    
+ 
+    margin-left: 37%;
+}
