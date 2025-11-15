@@ -99,3 +99,9 @@ function Proceed()  {
   alert("Thank you for registering with M.E.D.U! We will contact you soon via email with further information.");
    location.replace("/Pilot Gathering.php");
 }
+
+function checkDate()  {
+  alert("The Mars Excavation begins on November 17, 2025.");
+   
+}
+

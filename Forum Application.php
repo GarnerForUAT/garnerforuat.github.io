@@ -122,7 +122,7 @@ Welcome to the Pilot forums! Please fill out the application below to apply to b
 <br>
 <br>
 <br>
-  <button onclick="Proceed()"> proceed to Mars Theater</button> = 
+  <button onclick="Proceed()"> proceed to Mars Theater</button> 
 <br>
 <!--ALL code below is for the footer at the bottom of the html-->
 <footer class ="footer">

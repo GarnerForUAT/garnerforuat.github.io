@@ -20,7 +20,7 @@
       <!--Header 1's text--> <h1>Mars Theater View</h1>
    <!--Code for the background image that was rendered in the program, Blender--><style> 
    body {
-      background-image: url(images/forum\ image\ page.png);
+      background-image: url(images/M.E.D.U\ Truck\ image\ for\ screen\ view.png);
       height:152vh;
       width:100vh;
     
