@@ -35,7 +35,7 @@
 
 <?php
 //php code to set the launch date and time
-     $launchDateTime = strtotime(datetime: "November 17, 2025 10:34:45");
+     $launchDateTime = strtotime(datetime: "November 25, 2025 10:34:45");
 
      //format data to be used in javascript
      $jsDateTime = date(format: "F d, Y H:i:s", timestamp: $launchDateTime);   
@@ -88,14 +88,14 @@ let divCountdownMessage = document.getElementById("divCountdownMessage");
 if (timeDiff < 0){
   clearInterval(IntervalId); // stop the interval
   // message for missed launch
-  divCountdown.textContent = "The M.E.D.U Mars excavation has already began! Join us next time!";
+  divCountdown.textContent = "The M.E.D.U Mars Excavation has already began! Join us next time!!";
   alert("We're sorry, but this year's Mars Excavation has already begun! Join us next year as we make another voyage!!.");
 }
 else if (timeDiff < 3){
-  divCountdownMessage.textContent = "Time left until M.E.D.U launch!";
+  divCountdownMessage.textContent = "Time left until M.E.D.U Mars Excavation launch!";
 }
 else{
-  divCountdownMessage.textContent = "Mars exvaction will begin VERY soon!";
+  divCountdownMessage.textContent = "The Mars Excavation will begin VERY soon!";
 }
      }, 1000); // 1000 time in milliseconds (1 second)
 </script>

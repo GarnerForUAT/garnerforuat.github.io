@@ -14,7 +14,11 @@
 }
 
 
-
+$.message{ /* Code for all error messages that may appear on the form */
+    color:red;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 
 
@@ -27,8 +31,143 @@ nav /*navigation bar customizations */
 
 }
 
+label{ /* Code for all the labels' appearances. */
+    color:white;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left:20%;
+}
+
+input{ /* Code for the all the inputs's appearances. */
+
+    display:block;
+    margin-left:40%;
+color: rgb(255, 0, 0);
+width:480px;
+height:50px;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 25px;
+font-style: italic;
+border-radius: 10%;
+background:rgb(255, 255, 255);
+letter-spacing: 3px;
+font-weight:300;
+border-color: rgb(221, 221, 221);
+
+overflow: hidden;
+transition:.5s;
+}
+
+input:before {  /* Code for the button's appearance before cursor is hovered over them. */
+
+content: '';
+display: block;
+position:absolute;
+background: rgba(236, 236, 0, 0.774);
+width: 300px;
+height:100px;
+left:0;
+top:0;
+opacity:.4s;
+filter:blur(40px)
+transform:translateX(300px) skewX(-15deg);
+}
+
+input:after  /*Code for what happens after cursor is hovered over any buttons */
+{
+content: ''; 
+display: block;
+position:absolute;
+width: 290px;
+height:100px;
+left:0;
+top:0;
+opacity: 4s;
+filter; blur(40px);
+transform:translateX(-100px) scaleX(-15deg);
+}
 
 
+
+input:hover  /*Code for effects that occur while the cursor is hovered over any buttons */
+{
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 5px 50px 0 rgb(226, 226, 226) inset, 0 5px 50px 0 rgb(23, 29, 29),
+                0 5px 50px 0 rgb(255, 255, 255) inset, 0 5px 50px 0 rgb(255, 255, 255);
+                text-shadow: 0 0 5px orangered,
+                0 0 5px orangered ;
+    border-color:red;
+
+}
+
+input:hover:before  /* Code for what happens before the cursor is over any buttons */
+{
+transform:translateX(100px) skewX(-15deg);
+opacity: .4s;
+transition: .3s;
+}
+
+input:hover:after { /*Code for the effects that occur after cursor is hovered over a button */
+transform: translateX(100px) skewX(-15deg);
+opacity: .2s;
+transition: .3s;
+}
+
+
+button{ /* Code for the all the buttons's appearances. */
+
+    display:block;
+
+color: rgb(0, 217, 255);
+
+margin-left: 90%;
+width:300px;
+height:120px;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 30px;
+font-style:normal;
+border-radius: 10%;
+background:black;
+letter-spacing: 3px;
+font-weight:300;
+border-color: rgb(236, 200, 0);
+border-style:groove;
+overflow: hidden;
+transition:.5s;
+}
+
+
+
+
+button:hover  /*Code for effects that occur while the cursor is hovered over any buttons */
+{
+    background-color:rgb(18, 18, 32);
+    color:gold;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 5px 50px 0 black inset, 0 5px 50px 0 rgb(23, 29, 29),
+                0 5px 50px 0 aqua inset, 0 5px 50px 0 aqua;
+                text-shadow: 0 0 5px orangered,
+                0 0 5px orangered ;
+    border-color:red;
+
+}
+
+button:hover:before  /* Code for what happens before the cursor is over any buttons */
+{
+transform:translateX(100px) skewX(-15deg);
+opacity: .4s;
+transition: .3s;
+}
+
+input:hover:after { /*Code for the effects that occur after cursor is hovered over a button */
+transform: translateX(100px) skewX(-15deg);
+opacity: .2s;
+transition: .3s;
+}
 
 
 

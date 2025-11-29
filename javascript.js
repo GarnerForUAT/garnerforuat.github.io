@@ -105,3 +105,27 @@ function checkDate()  {
    
 }
 
+function validateFormSecurePage(){
+  //create shortcut to form
+   let form = document.frmSecure;
+
+   let EmployeeName = form.txtEmployeeName.value.trim(); //remove loading 
+   // and trailing spaces
+
+  //shortcut to the message div
+    let message = document.getElementById("divMessage");
+
+  // check to see if full name is blank
+   if(EmployeeName.length == 0){
+    message.textContent = "Please enter your employee position" ;
+      return false; //prevent form submission
+   }
+else {
+  alert("Welcome back dear employee!!! Standby for your email instructions on how to proceed.");
+
+   return true;; //allow form submission
+}
+}
+
+
+
