@@ -23,7 +23,7 @@ header("Location: login.php");
 <body>
     <header>
         <?php include 'menu.php'; ?>
-        <h1>M.E.D.U Tour - Login</h1>
+        <h1>M.E.D.U Tour - Secure Employee Page</h1>
     </header>
 
       <br>

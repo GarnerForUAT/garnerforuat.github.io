@@ -10,10 +10,13 @@
 
 </head>
 <body><!--Code below to call menu.php file-->
+  
   <header>
     <?php include "menu.php"; 
 ?>
   </header>
+  <br>
+ <br>
     <!--All code in the nav tags below are for the navigation bar to be displayed-->
     
       <!--Header 1's text--> <h1>The M.E.D.U. Foundation Mars Tour</h1>
@@ -22,8 +25,8 @@
    <!--Code for the background image that was rendered in the program, Blender--><style> 
    body {
       background-image: url(images/MARS\ TRUCK.png);
-      height:155vh;
-      width:145vh;
+      height:185vh;
+      width:135vh;
     
       background-size: cover;
       background-position: center;
@@ -50,10 +53,12 @@
        <br>
     <br>
     <br>
-    <br>
+   <br>
+   <br>
+   <br>
    <br>
   <!--ALL  paragraph codes below are the code to display the paragraph texts on the page-->
-    <p>Welcome to the M.E.D.U(or short for Mars Exploration Department Union) mars tour!!! Founded by some of the head researcher over NASA, M.E.D.U aims to recruit the most qualifed pilots to uncover the wanders of Mars as we advance to the new age. </p>
+    <p>Welcome to the M.E.D.U(or short for Mars Exploration Department Union) mars tour!!! Founded by some of the head researchers over NASA, M.E.D.U aims to recruit the most qualifed pilots to uncover the wanders of Mars as we advance to the new age. </p>
     <br>
     <p>Together we'll explore the wonders of Mars itself and all of the strange geography to be uncovered for exploration!</p>
     <br>
@@ -69,6 +74,14 @@
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<button onclick="location.href='fetch data.php'">Click here to see our vehicles!</button>
 <br>
 <br>
 <br>
@@ -93,6 +106,5 @@
         </div>
   </div>
 </footer>
-
 </body>
 </html>
