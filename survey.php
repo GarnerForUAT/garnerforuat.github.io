@@ -6,7 +6,7 @@
     <title>M.E.D.U</title>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
+   <!--Code to javascript file--><script src = "/javascript.js"></script>
     <link rel="stylesheet" type="text/css" href="/survey.css">
 <style> 
    
@@ -19,7 +19,7 @@
 
  .charcount{
     font-size: 0.9em;
-    color: gray;
+    color: white;
  }
  
    body {
@@ -31,14 +31,25 @@
    }
 </style>
 </head>
+
+<header>
+    <?php include "menu.php"; 
+?>
+  </header>
 <body>
     <main>
         <h1>Survey Page</h1>
         <br>
 <br>
 <br>
-
-<
+        <h2>Welcome to the M.E.D.U survey page! Please fill out the survey below to help us improve our website and services!</h2>
+        <br>
+        <br>
+<br>
+<br>
+<br>
+<br>
+<br>
     </main>
      <form id="frmSurvey" name="frmSurvey">
         <label for="selSat">Do you support the voyage to Mars?</label>
@@ -63,7 +74,7 @@
            <textarea id="TxtComments" name="TxtComments" rows="10" cols="30"></textarea>
            <div id="divCharCount" class="char-count">0/250 Characters</div>
 
-           <button>Submit Survey</button>
+       <button onclick="Proceed()">Submit Survey</button>
      </form>
 
      <script>
@@ -95,6 +106,7 @@
             //check if max character limit is exceeded
             if (currentChars > maxChars) {
                 $('#divCharCount').css('color', 'red');
+                
             } else {
                 $('#divCharCount').css('color', 'gray');
             }
@@ -105,7 +117,7 @@
 });
     
      </script>
-     <!--ALL code below is for the footer at the bottom of the html-->
+ 
 
      <br>
 <br>
@@ -133,6 +145,7 @@
 <br>
 <br>
 <br>
+    <!--ALL code below is for the footer at the bottom of the html-->
 <footer class ="footer">
   <div class="container">
     <div class="row">

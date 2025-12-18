@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--Name of Website Page-->  <title>Assignment 1.1</title>
 <!--Code to call css file--> <link rel="stylesheet" type = "text/css" href="style.css">
-<!--Code to empty javascript file--><script src = "/javascript.js"></script>
+<!--Code to javascript file--><script src = "/javascript.js"></script>
 
 </head>
 <body><!--Code below to call menu.php file-->
@@ -17,6 +17,24 @@
   </header>
   <br>
  <br>
+ <br>
+    <br>
+ <br>
+ <br>
+    <br>
+    <br>
+    <br>
+ <br>
+ <br>
+    <br>
+    <br>
+<br>
+<br>
+   <br>
+    <br>
+<br>
+<br>
+<br>
     <!--All code in the nav tags below are for the navigation bar to be displayed-->
     
       <!--Header 1's text--> <h1>The M.E.D.U. Foundation Mars Tour</h1>
@@ -24,8 +42,8 @@
      <br>
    <!--Code for the background image that was rendered in the program, Blender--><style> 
    body {
-      background-image: url(images/MARS\ TRUCK.png);
-      height:185vh;
+      background-image: url(images/M.E.D.U\ Headquarters.png);
+      height:214vh;
       width:135vh;
     
       background-size: cover;
@@ -82,8 +100,6 @@
 <br>
 <br>
 <button onclick="location.href='fetch data.php'">Click here to see our vehicles!</button>
-<br>
-<br>
 <br>
 <br>
 <br>

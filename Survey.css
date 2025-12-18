@@ -20,6 +20,12 @@ $.message{ /* Code for all error messages that may appear on the form */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.char-count{
+    color:black;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
 
 
 nav /*navigation bar customizations */
@@ -36,6 +42,8 @@ label{ /* Code for all the labels' appearances. */
     font-size: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-left:20%;
+    background-image:linear-gradient(rgb(6, 4, 10),rgba(148, 42, 0, 0.493) 250%);
+ 
 }
 
 input{ /* Code for the all the inputs's appearances. */

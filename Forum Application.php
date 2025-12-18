@@ -48,81 +48,93 @@ Welcome to the Pilot forums! Please fill out the application below to apply to b
 <main>
 <!--First Form-->
 <div id="divMessage" class= "error"></div>
-<form method="post" id="frmApp" name="frmApp" action="/Forum Application.php"
+<form method="post" id="frmApp" name="frmApp" action="/Pilot Gathering.php"
 
   onsubmit="return validateForm();">
   <label for="txtFullName">Full Name:</label>
   <input type="text" id="txtFullName" name="txtFullName"
-  placeholder="Your Full Name">
-
-  <input type="submit" value="Submit Application">
+  placeholder="Your Full Name" required>
 <br>
 <br>
-</form>
+<br>
+<br>
 <!--Second Form-->
-  <div id="divMessage2" class= "error"></div>
-<form method="post" id="frmApp2" name="frmApp2" action="/Forum Application.php"
+ <div id="divMessage2" class= "error"></div>
+<form method="post" id="frmApp2" name="frmApp2" action="/Pilot Gathering.php"
 
   onsubmit="return validateForm2();">
   <label for="txtSecondQuestion">Current age:</label>
-  <input type="text" id="txtSecondQuestion" name="txtSecondQuestion"
-  placeholder="Subnit your age">
-
-  <input type="submit" value="Submit Application">
-</form>
+  <input type="number" id="txtSecondQuestion" name="txtSecondQuestion"
+  placeholder="Submit your age" required> 
 <br>
 <br>
 <br>
-<br><br>
-
+<br>
 <!--Third Form-->
-  <div id="divMessage3" class= "error"></div>
-<form method="post" id="frmApp3" name="frmApp3" action="/Forum Application.php"
+ 
+ <div id="divMessage3" class= "error"></div>
+<form method="post" id="frmApp3" name="frmApp3" action="/Pilot Gathering.php"
 
   onsubmit="return validateForm3();">
   <label for="txtThirdQuestion">Place of graduation :</label>
   <input type="text" id="txtThirdQuestion" name="txtThirdQuestion"
-  placeholder="Institution Name">
-
-  <input type="submit" value="Submit Application">
-</form>
+  placeholder="Institution Name" required>
 <br>
 <br>
-
+<br>
+<br>
  <!--Fourth Form-->
-  <div id="divMessage4" class= "error"></div>
-<form method="post" id="frmApp4" name="frmApp4" action="/Forum Application.php"
+    <div id="divMessage4" class= "error"></div>
+<form method="post" id="frmApp4" name="frmApp4" action="/Pilot Gathering.php"
 
   onsubmit="return validateForm4();">
   <label for="txtFourthQuestion">How you heard about us:</label>
   <input type="text" id="txtFourthQuestion" name="txtFourthQuestion"
-  placeholder="Insert all sources here">
-
-  <input type="submit" value="Submit Application">
-</form>
+  placeholder="Insert all sources here" required>
+<br>
+<br>
 <br>
 <br>
 <!--Final Form-->
   <div id="divMessage5" class= "error"></div>
-<form method="post" id="frmApp5" name="frmApp5" action="/Forum Application.php"
+<form method="post" id="frmApp5" name="frmApp5" action="/Pilot Gathering.php"
 
   onsubmit="return validateForm5();">
   <label for="txtFinalQuestion">Your dream goals as a pilot with us:</label>
   <input type="text" id="txtFinalQuestion" name="txtFinalQuestion"
-  placeholder="Specify your goals here">
+  placeholder="Specify your goals here" required>
 
-  <input type="submit" value="Submit Application">
+  <input type="submit" value="Submit Application" onsubmit="Proceed()"> 
 </form>
 </main>
 <br>
 <br>
-
 <br>
 <br>
 <br>
 <br>
 <br>
-  <button onclick="Proceed()"> proceed to Mars Theater</button> 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <!--ALL code below is for the footer at the bottom of the html-->
 <footer class ="footer">

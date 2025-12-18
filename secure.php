@@ -53,7 +53,7 @@ header("Location: login.php");
 <main>
 <!--First Form-->
 <div id="divMessage" class= "error"></div>
-<form method="post" id="frmSecure" name="frmSecure" action="secure.php"
+<form method="post" id="frmSecure" name="frmSecure" action="employeesecretpage.php"
 
   onsubmit="return validateFormSecurePage();">
   <label for="txtEmployeeName">Your employee position:</label>

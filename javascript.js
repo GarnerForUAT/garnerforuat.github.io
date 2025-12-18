@@ -16,6 +16,7 @@ function validateForm(){
    }
 
    return true;; //allow form submission
+
 }
 
 
@@ -96,13 +97,8 @@ function validateForm5(){
 }
 
 function Proceed()  {
-  alert("Thank you for registering with M.E.D.U! We will contact you soon via email with further information.");
-   location.replace("/Pilot Gathering.php");
-}
-
-function checkDate()  {
-  alert("The Mars Excavation begins on November 17, 2025.");
-   
+  alert("Thank you for taking the survey! We hope you enjoyed your visit to our website. Take care!!!!");
+location.replace('fetch data.php');
 }
 
 function validateFormSecurePage(){
@@ -121,10 +117,16 @@ function validateFormSecurePage(){
       return false; //prevent form submission
    }
 else {
-  alert("Welcome back dear employee!!! Standby for your email instructions on how to proceed.");
 
+  alert("Welcome back dear employee!!! Standby for your email instructions on how to proceed. For now, we will redirect you to the secret employee page.");
    return true;; //allow form submission
+   
 }
+}
+
+function checkDate()  {
+  alert("The Mars Excavation begins on November 17, 2025.");
+   
 }
 
 

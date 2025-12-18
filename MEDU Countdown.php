@@ -19,7 +19,7 @@
 
    <!--Code for the background image that was rendered in the program, Blender--><style> 
    body {
-      background-image: url(images/forum\ image\ page.png);
+      background-image: url(images/M.E.D.U\ Truck\ image\ for\ screen\ view.png);
       height:156vh;
       width:79Svh;
       background-size: cover;
@@ -35,7 +35,7 @@
 
 <?php
 //php code to set the launch date and time
-     $launchDateTime = strtotime(datetime: "November 25, 2025 10:34:45");
+     $launchDateTime = strtotime(datetime: "November 25, 2027 10:34:45");
 
      //format data to be used in javascript
      $jsDateTime = date(format: "F d, Y H:i:s", timestamp: $launchDateTime);   

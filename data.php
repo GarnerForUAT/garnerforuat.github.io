@@ -2,6 +2,7 @@
 // develop a  2d arry to convert to JSON format
 $data = [
      ['name' => 'The M.E.D.U Mars Truck. Founded in', 'value' => 2043.], 
+     
      ['name' => 'The M.E.D.U Mars Truck is a heavy-duty vehicle designed for transporting supplies and personnel across the challenging terrain of Mars. It features advanced suspension systems, reinforced armor plating, and autonomous navigation capabilities to ensure safe and efficient travel across Martian environment.', 'value' => 'moves at 60 mph'],
 ['name' => 'The M.E.D.U Space Spear. Founded in', 'value' => 2034.],
      ['name' => 'The M.E.D.U Space Spear is a sleek and agile spacecraft designed for rapid response and exploration missions. Equipped with state-of-the-art propulsion systems and advanced life support technologies, the Space Spear enables astronauts to undertake long-duration missions while ensuring their safety and comfort in the harsh conditions of space.', 'value' => 'reaches speeds up to 25,000 mph'],

@@ -74,9 +74,9 @@ else{
   
      <br>
 
-     <p>Welcome to the M.E.D.U(or short for Mars Exploration Department Union) login page!!! We're glad you could join us!!!. </p>
+     <p>Welcome to the M.E.D.U(or short for Mars Exploration Department Union) login page!!! We're glad to see you on this fine day! </p>
     <br>
-    <p>Please enter your credentials below to register your chance to join us!</p>
+    <p>Please enter your employee credentials below to access our employee page.</p>
     <br>
     <!--Display message indicating login status-->
     <?php echo $message; ?>
@@ -113,7 +113,14 @@ else{
         <label for="pwdUser">Password:</label>
         <input type="password" name="pwdUser" id="pwdUser">   
     </div>
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
     <button type="submit">Login</button>
 </form>
 </main>
